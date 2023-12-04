@@ -38,8 +38,8 @@ pnpm prisma generate
 # git config --global user.name "Prismo"
 
 # push project to Netlify
-git init
-git remote add origin "git@github.com:Jolg42/prisma-ecosystem-tests-netlify-github.git"
+# git init
+# git remote add origin "git@github.com:Jolg42/prisma-ecosystem-tests-netlify-github.git"
 git add .
 git commit -m "push to netlify: $ID, engine = $PRISMA_CLIENT_ENGINE_TYPE"
 # TODO Do not force push so history is available
