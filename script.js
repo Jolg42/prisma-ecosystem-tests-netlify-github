@@ -12,7 +12,12 @@ console.debug(
   ),
 )
 
-// fs.copyFileSync('/opt/build/repo/node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node', '/opt/build/repo/node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node')
+const filestmp = fs.readdirSync('/tmp/prisma-engines')
+fs.copyFileSync(
+  '/tmp/prisma-engines',
+  '/opt/build/repo/node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node',
+)
+console.log({ filestmp })
 
 // list all files in node_modules/.prisma/client
 const fs = require('fs')
@@ -21,6 +26,3 @@ const dirPath = path.dirname(require.resolve('.prisma/client'))
 const files = fs.readdirSync(dirPath)
 console.log({ dirPath })
 console.log({ files })
-
-const filestmp = fs.readdirSync('/tmp/prisma-engines')
-console.log({ filestmp })
