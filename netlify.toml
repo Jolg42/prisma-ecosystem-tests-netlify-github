@@ -1,6 +1,6 @@
 [build]
 functions = "functions/"
-included_files = ["/opt/build/repo/node_modules/.prisma/client/**"]
+included_files = ["/opt/build/repo/node_modules/.prisma/client/**/*", "/tmp/prisma-engines/**"]
 
 [context.branch-deploy.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
