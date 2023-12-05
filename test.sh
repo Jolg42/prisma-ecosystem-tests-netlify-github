@@ -2,6 +2,8 @@
 
 set -eux
 
+PRISMA_CLIENT_ENGINE_TYPE=library
+
 ID=$( tail -n 1 id.txt )
 
 if [ "$PRISMA_CLIENT_ENGINE_TYPE" == "binary" ]; then

@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "pnpm netlify dev",
-    "build": "PRISMA_TELEMETRY_INFORMATION='ecosystem-tests platform netlify-github build' && pnpm prisma generate"
+    "build": "PRISMA_TELEMETRY_INFORMATION='ecosystem-tests platform netlify-github build' && pnpm prisma generate && node script.js"
   },
   "dependencies": {
     "@prisma/client": "5.7.0-dev.93"

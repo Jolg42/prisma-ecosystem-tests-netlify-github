@@ -47,4 +47,5 @@ git branch $ID
 git push -u origin $ID
 # rm -rf .git
 
+echo "Waiting...."
 sleep 30 # give netlify some time to build and deploy
