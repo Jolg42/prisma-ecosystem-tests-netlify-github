@@ -1,6 +1,6 @@
 [build]
 functions = "functions/"
-included_files = ["**/node_modules/.prisma/**"]
+included_files = ["/var/task/node_modules/.prisma/client/**"]
 
 # /var/task/node_modules/.prisma/client
 # external_node_modules = ["prisma", "@prisma/client"]
