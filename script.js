@@ -17,7 +17,7 @@ console.debug(
 
 const filestmp = fs.readdirSync('/tmp/prisma-engines')
 fs.copyFileSync(
-  '/tmp/prisma-engines',
+  '/tmp/prisma-engines/libquery_engine-rhel-openssl-3.0.x.so.node',
   '/opt/build/repo/node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node',
 )
 console.log({ filestmp })
