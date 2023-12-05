@@ -4,6 +4,8 @@ const client = new PrismaClient()
 
 exports.handler = async function (event, context, callback) {
   // await client.user.deleteMany({})
+  const version = process.version
+  const { NETLIFY_BETA_PG_URL, ...env } = process.env
 
   console.debug(
     JSON.stringify(
@@ -55,9 +57,6 @@ exports.handler = async function (event, context, callback) {
   const fs = require('fs')
   const path = require('path')
   const files = fs.readdirSync(path.dirname(require.resolve('.prisma/client')))
-
-  const version = process.version
-  const { NETLIFY_BETA_PG_URL, ...env } = process.env
 
   return {
     statusCode: 200,
