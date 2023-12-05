@@ -56,7 +56,11 @@ exports.handler = async function (event, context, callback) {
   // list all files in node_modules/.prisma/client
   const fs = require('fs')
   const path = require('path')
-  const files = fs.readdirSync(path.dirname(require.resolve('.prisma/client')))
+  const dirPath = path.dirname(require.resolve('.prisma/client'))
+  const files = fs.readdirSync(dirPath)
+
+  console.log({ dirPath })
+  console.log({ files })
 
   return {
     statusCode: 200,
