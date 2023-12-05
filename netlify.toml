@@ -1,7 +1,10 @@
 [build]
 functions = "functions/"
+included_files = ["**/node_modules/.prisma/**"]
 
-external_node_modules = ["prisma", "@prisma/client"]
+# /var/task/node_modules/.prisma/client
+# external_node_modules = ["prisma", "@prisma/client"]
+# "!**/node_modules/.pnpm/@swc*/**/*"
 
 [context.branch-deploy.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
