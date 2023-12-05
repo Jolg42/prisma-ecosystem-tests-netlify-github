@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@prisma/client':
-    specifier: 5.7.0-integration-netlify-node20.3
-    version: 5.7.0-integration-netlify-node20.3(prisma@5.7.0-integration-netlify-node20.3)
+    specifier: 5.7.0-integration-netlify-node20.4
+    version: 5.7.0-integration-netlify-node20.4(prisma@5.7.0-integration-netlify-node20.4)
 
 devDependencies:
   '@types/node':
     specifier: 16.18.66
     version: 16.18.66
   prisma:
-    specifier: 5.7.0-integration-netlify-node20.3
-    version: 5.7.0-integration-netlify-node20.3
+    specifier: 5.7.0-integration-netlify-node20.4
+    version: 5.7.0-integration-netlify-node20.4
   ts-node:
     specifier: 10.9.1
     version: 10.9.1(@types/node@16.18.66)(typescript@5.1.6)
@@ -45,8 +45,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@prisma/client@5.7.0-integration-netlify-node20.3(prisma@5.7.0-integration-netlify-node20.3):
-    resolution: {integrity: sha512-HTYS1tLT/VnuUSNF0PTjRpsdWj18afIKAPDKE1GlialZpXiusgUfnv5av71WLulRIzFekuBD5/9WGMp0byBfIA==}
+  /@prisma/client@5.7.0-integration-netlify-node20.4(prisma@5.7.0-integration-netlify-node20.4):
+    resolution: {integrity: sha512-p/BYq+Xm6XwwuWF917qlCTuFUWlBYv1FQSD6pZ+J/d6t4/pQH29otsOKoQm+tcz6yPmEL77I94ga2JgqcccVBA==}
     engines: {node: '>=16.13'}
     requiresBuild: true
     peerDependencies:
@@ -55,35 +55,35 @@ packages:
       prisma:
         optional: true
     dependencies:
-      prisma: 5.7.0-integration-netlify-node20.3
+      prisma: 5.7.0-integration-netlify-node20.4
     dev: false
 
-  /@prisma/debug@5.7.0-integration-netlify-node20.3:
-    resolution: {integrity: sha512-Ghgj3ptOrLkvt30cW+Ye0VmUbBN3NIKTCs45cI4pbzEmIG4kcCKcf8eD69NXogACZSJ1sH9KvnX1/G4ANnwQRw==}
+  /@prisma/debug@5.7.0-integration-netlify-node20.4:
+    resolution: {integrity: sha512-Gkbkw7fBNTTf7e6VuuFcwxAfm3p976SzxcLSo3xgizCfkvNxZXXadLu3wwk/2AEgVe40V3JoX/yYTSTOeOBjOA==}
 
   /@prisma/engines-version@5.7.0-34.a0c366aa4413a5e23838419c41c64a64faf6d9cb:
     resolution: {integrity: sha512-iRmNncX22lX7l82p4ufDSTK6QUUU9P0gRVzMHc7KOsJgFzLOIVWmOWW9Lb2v2LMXCC6aMxluYbKV8+8/sSpnBw==}
 
-  /@prisma/engines@5.7.0-integration-netlify-node20.3:
-    resolution: {integrity: sha512-myxOV7KTGdqs38Erwvl6RXzVuxakRMZHrtmBWmgUj2pZpLS+A8mC21Iq8EORblouSi2M49zFb++oikLGljhY2w==}
+  /@prisma/engines@5.7.0-integration-netlify-node20.4:
+    resolution: {integrity: sha512-zjumEdTn7Tz+cZYO+jvFnFJ3KNf/GMVJVnHU69BCAA8L5aay+0WC2K56ll4SB1Dq8tg4nWhXgQ2I/x5sk19rxQ==}
     requiresBuild: true
     dependencies:
-      '@prisma/debug': 5.7.0-integration-netlify-node20.3
+      '@prisma/debug': 5.7.0-integration-netlify-node20.4
       '@prisma/engines-version': 5.7.0-34.a0c366aa4413a5e23838419c41c64a64faf6d9cb
-      '@prisma/fetch-engine': 5.7.0-integration-netlify-node20.3
-      '@prisma/get-platform': 5.7.0-integration-netlify-node20.3
+      '@prisma/fetch-engine': 5.7.0-integration-netlify-node20.4
+      '@prisma/get-platform': 5.7.0-integration-netlify-node20.4
 
-  /@prisma/fetch-engine@5.7.0-integration-netlify-node20.3:
-    resolution: {integrity: sha512-X1yr/fFu1cYqBbvtOiQkphZJCDJaOL8vkZ7bp+3jT9np6MMFxxYLInnjCatYnabp5k5R+rsq8mPFbKFlEidtDQ==}
+  /@prisma/fetch-engine@5.7.0-integration-netlify-node20.4:
+    resolution: {integrity: sha512-+M5aqXbaC6VTuCfBj0FOcoaHRZEOBt9pqMIghV5vUHPurqqfSI8zvkkbX8e7snRNdrWM/ZnmgvtzrRBJj+CCWQ==}
     dependencies:
-      '@prisma/debug': 5.7.0-integration-netlify-node20.3
+      '@prisma/debug': 5.7.0-integration-netlify-node20.4
       '@prisma/engines-version': 5.7.0-34.a0c366aa4413a5e23838419c41c64a64faf6d9cb
-      '@prisma/get-platform': 5.7.0-integration-netlify-node20.3
+      '@prisma/get-platform': 5.7.0-integration-netlify-node20.4
 
-  /@prisma/get-platform@5.7.0-integration-netlify-node20.3:
-    resolution: {integrity: sha512-ch/HXuyi+ElPXiZ12qFEi8RStbcJD+EQubgZnfACU8u5T4glaTthiiSw4nF8hshoPtsiWCtz9qLLnhl1AM4Oxw==}
+  /@prisma/get-platform@5.7.0-integration-netlify-node20.4:
+    resolution: {integrity: sha512-xe/Hp0fiGmPq7M65DMWudCHSRiKk/8xJKFmk7DL1uvileMiXtFb7cxjQLXPCA1sHGFQIIY0fu2f+5lcrn525Cw==}
     dependencies:
-      '@prisma/debug': 5.7.0-integration-netlify-node20.3
+      '@prisma/debug': 5.7.0-integration-netlify-node20.4
 
   /@tsconfig/node10@1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
@@ -133,13 +133,13 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
 
-  /prisma@5.7.0-integration-netlify-node20.3:
-    resolution: {integrity: sha512-D7TWDqsJ8VPEooLE75knVddSZgLed8xWen6yU6Sztk+b5ie56+sh+jUdH56fknROgWWuQhajS35UABpJkS2bjg==}
+  /prisma@5.7.0-integration-netlify-node20.4:
+    resolution: {integrity: sha512-hRzJ9lL2RcuIWqLe2fESOdjDrNNQ2AyHKYvVxVjwbRO88ss5CjcZfFUP77T+VP5TjDvIVA8cxk7LT3RQsHwq+w==}
     engines: {node: '>=16.13'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@prisma/engines': 5.7.0-integration-netlify-node20.3
+      '@prisma/engines': 5.7.0-integration-netlify-node20.4
 
   /ts-node@10.9.1(@types/node@16.18.66)(typescript@5.1.6):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
