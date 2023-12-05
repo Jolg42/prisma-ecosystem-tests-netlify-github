@@ -3,7 +3,18 @@ const { PrismaClient, Prisma } = require('@prisma/client')
 const client = new PrismaClient()
 
 exports.handler = async function (event, context, callback) {
-  await client.user.deleteMany({})
+  // await client.user.deleteMany({})
+
+  console.debug(
+    JSON.stringify(
+      {
+        env,
+        version,
+      },
+      null,
+      2,
+    ),
+  )
 
   const id = '12345'
 
