@@ -2,8 +2,12 @@ const version = process.version
 const { NETLIFY_BETA_PG_URL, ...env } = process.env
 
 console.debug(
-  JSON.stringify({
-    env,
-    version,
-  }),
+  JSON.stringify(
+    {
+      env,
+      version,
+    },
+    null,
+    2,
+  ),
 )
