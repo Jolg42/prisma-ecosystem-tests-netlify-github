@@ -2,5 +2,4 @@
 functions = "functions/"
 
 [context.branch-deploy.environment]
-  AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
   TEST="branch-deploy"
