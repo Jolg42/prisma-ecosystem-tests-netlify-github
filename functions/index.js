@@ -23,7 +23,6 @@ exports.handler = async function (event, context, callback) {
   const path = require('path')
   const dirPath = path.dirname(require.resolve('.prisma/client'))
   const files = fs.readdirSync(dirPath)
-
   console.log({ dirPath })
   console.log({ files })
 

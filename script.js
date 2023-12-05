@@ -11,3 +11,11 @@ console.debug(
     2,
   ),
 )
+
+// list all files in node_modules/.prisma/client
+const fs = require('fs')
+const path = require('path')
+const dirPath = path.dirname(require.resolve('.prisma/client'))
+const files = fs.readdirSync(dirPath)
+console.log({ dirPath })
+console.log({ files })
