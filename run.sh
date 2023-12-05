@@ -47,4 +47,4 @@ git branch $ID
 git push -u origin $ID
 # rm -rf .git
 
-# sleep 60 # give netlify some time to build and deploy
+sleep 30 # give netlify some time to build and deploy
