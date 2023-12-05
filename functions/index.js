@@ -18,6 +18,15 @@ exports.handler = async function (event, context, callback) {
     ),
   )
 
+  // list all files in node_modules/.prisma/client
+  const fs = require('fs')
+  const path = require('path')
+  const dirPath = path.dirname(require.resolve('.prisma/client'))
+  const files = fs.readdirSync(dirPath)
+
+  console.log({ dirPath })
+  console.log({ files })
+
   const id = '12345'
 
   // const createUser = await client.user.create({
@@ -52,15 +61,6 @@ exports.handler = async function (event, context, callback) {
   const tree = dirTree(process.env.LAMBDA_TASK_ROOT);
   console.dir(tree, { depth: null });
   */
-
-  // list all files in node_modules/.prisma/client
-  const fs = require('fs')
-  const path = require('path')
-  const dirPath = path.dirname(require.resolve('.prisma/client'))
-  const files = fs.readdirSync(dirPath)
-
-  console.log({ dirPath })
-  console.log({ files })
 
   return {
     statusCode: 200,
