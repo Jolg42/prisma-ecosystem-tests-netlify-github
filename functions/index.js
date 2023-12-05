@@ -7,23 +7,23 @@ exports.handler = async function (event, context, callback) {
 
   const id = '12345'
 
-  const createUser = await client.user.create({
-    data: {
-      id,
-      email: 'alice@prisma.io',
-      name: 'Alice',
-    },
-  })
+  // const createUser = await client.user.create({
+  //   data: {
+  //     id,
+  //     email: 'alice@prisma.io',
+  //     name: 'Alice',
+  //   },
+  // })
 
-  const updateUser = await client.user.update({
-    where: {
-      id,
-    },
-    data: {
-      email: 'bob@prisma.io',
-      name: 'Bob',
-    },
-  })
+  // const updateUser = await client.user.update({
+  //   where: {
+  //     id,
+  //   },
+  //   data: {
+  //     email: 'bob@prisma.io',
+  //     name: 'Bob',
+  //   },
+  // })
 
   const users = await client.user.findUnique({
     where: {
@@ -31,7 +31,7 @@ exports.handler = async function (event, context, callback) {
     },
   })
 
-  const deleteManyUsers = await client.user.deleteMany()
+  // const deleteManyUsers = await client.user.deleteMany()
 
   /*
   // list all files deployed in Lambda to debug when tests are failing
@@ -45,6 +45,9 @@ exports.handler = async function (event, context, callback) {
   const path = require('path')
   const files = fs.readdirSync(path.dirname(require.resolve('.prisma/client')))
 
+  const version = process.version
+  const { NETLIFY_BETA_PG_URL, ...env } = process.env
+
   return {
     statusCode: 200,
     body: JSON.stringify({
@@ -54,6 +57,8 @@ exports.handler = async function (event, context, callback) {
       users,
       deleteManyUsers,
       files,
+      env,
+      version,
     }),
     headers: {
       'Access-Control-Allow-Origin': '*',
