@@ -25,9 +25,13 @@ const library3xName = 'libquery_engine-rhel-openssl-3.0.x.so.node'
 // Copy the 3.0.x engine to the expected location
 fs.copyFileSync(path.join(sourceDir, library3xName), path.join(destDir, library3xName))
 
-// Delete the 1.0.x engine
-// Only log if that fails
-await fs.unlink(path.join(destDir, library1xName)).catch((e) => console.log(e))
+try {
+  // Delete the 1.0.x engine
+  fs.unlinkSync(path.join(destDir, library1xName))
+} catch (e) {
+  // Only log if that fails
+  console.log('Deletion of the 1.0.x engine failed and was ignored:', e)
+}
 
 // list all files in node_modules/.prisma/client
 const dirPath = path.dirname(require.resolve('.prisma/client'))
