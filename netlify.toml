@@ -1,6 +1,5 @@
 [build]
 functions = "functions/"
-included_files = ["/opt/build/repo/node_modules/.prisma/client/libquery_engine-rhel-openssl-1.0.x.so.node", "node_modules/.prisma/client/libquery_engine-rhel-openssl-1.0.x.so.node"]
 
 [context.branch-deploy.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs20.x"
